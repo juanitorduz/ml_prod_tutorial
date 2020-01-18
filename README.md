@@ -5,15 +5,30 @@ In this repository I explore tips and tricks to deploy machine learning models w
 ## Setup 
 
 1. Create virtual environment: 
-```
-virtualenv tutorial_env
+```bash
+virtualenv venv 
 ```
 
 2. Activate environment:
-```
-source tutorial_env/bin/activate
+```bash
+source venv/bin/activate
 ```
 3. Install requirements:
-```
+```bash
 pip install -r requirements.txt
+```
+
+## Set ENV Variables
+
+```bash
+mkdir model
+export MODEL_DIR=model
+export MODEL_FILE=lin_mod.joblib
+export METADATA_FILE=metadata.json
+```
+
+## Generate Data 
+
+```bash
+python generate_data.py
 ```
