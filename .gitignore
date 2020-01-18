@@ -128,4 +128,16 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+.DS_Store
+
+# PyCharm
 .idea/
+
+# Virtual Env
+venv/
+
+# Data
+data/
+
+# Model
+model/
