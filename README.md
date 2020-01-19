@@ -26,9 +26,20 @@ make generate_data
 make train
 ```
 
+## Generate Predictions
+
+```bash
+make inference
+```
 ---
 
 ## Build Docker image
 ```bash
 docker build -t docker-model .
+```
+
+## Generate Predictions
+
+```bash
+docker run docker-model python3 inference.py
 ```

@@ -4,6 +4,7 @@ from joblib import dump
 import pandas as pd
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error
+from utils import load_data
 
 MODEL_DIR = os.environ['MODEL_DIR']
 MODEL_FILE = os.environ['MODEL_FILE']
@@ -18,10 +19,7 @@ def train(data_path):
     :param data_path: path of the training data as csv.
     :return: None
     """
-    df = pd.read_csv(data_path)
-
-    X_train = df['x'].values.reshape(-1, 1)
-    y_train = df['y'].values.reshape(-1, 1)
+    X_train, y_train = load_data(data_path)
 
     lin_model = LinearRegression()
     lin_model.fit(X_train, y_train)
@@ -33,15 +31,15 @@ def train(data_path):
     }
 
     # Serialize model and metadata.
-    print("Serializing model to: {}".format(MODEL_PATH))
+    print('Serializing model to: {}'.format(MODEL_PATH))
     dump(lin_model, MODEL_PATH)
 
-    print("Serializing metadata to: {}".format(METADATA_PATH))
+    print('Serializing metadata to: {}'.format(METADATA_PATH))
     with open(METADATA_PATH, 'w') as outfile:
         json.dump(metadata, outfile)
 
     return None
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     train(data_path='data/train_data.csv')

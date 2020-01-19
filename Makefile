@@ -14,3 +14,9 @@ train:
 	export MODEL_FILE=lin_mod.joblib; \
 	export METADATA_FILE=metadata.json; \
 	python train.py
+
+inference:
+	export MODEL_DIR=model; \
+	export MODEL_FILE=lin_mod.joblib; \
+	export METADATA_FILE=metadata.json; \
+	python inference.py
