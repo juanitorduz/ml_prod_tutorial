@@ -37,3 +37,9 @@ make inference
 ```bash
 docker build -t docker-model .
 ```
+
+## Generate Predictions
+
+```bash
+docker run docker-model python3 inference.py
+```
