@@ -26,6 +26,11 @@ make generate_data
 make train
 ```
 
+## Generate Predictions
+
+```bash
+make inference
+```
 ---
 
 ## Build Docker image
