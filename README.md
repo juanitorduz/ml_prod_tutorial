@@ -43,3 +43,7 @@ docker build -t docker-model .
 ```bash
 docker run docker-model python3 inference.py
 ```
+
+```bash
+curl -i -H "Content-Type: application/json" -X POST -d '{"x": 1.2}' 127.0.0.1:5000/predict
+```
