@@ -3,14 +3,15 @@ from flask import Flask
 from flask_restful import Resource, Api, reqparse
 from joblib import load
 import numpy as np
+from envs import envs
 
-MODEL_DIR = os.environ["MODEL_DIR"]
-MODEL_FILE = os.environ["MODEL_FILE"]
-METADATA_FILE = os.environ["METADATA_FILE"]
+MODEL_DIR = envs['MODEL_DIR']
+MODEL_FILE = envs['MODEL_FILE']
+METADATA_FILE = envs['METADATA_FILE']
 MODEL_PATH = os.path.join(MODEL_DIR, MODEL_FILE)
 METADATA_PATH = os.path.join(MODEL_DIR, METADATA_FILE)
 
-lin_mod = load(MODEL_PATH)
+ml_mod = load(MODEL_PATH)
 
 app = Flask(__name__)
 api = Api(app)
@@ -33,7 +34,7 @@ class Prediction(Resource):
     def post(self):
         args = self.reqparse.parse_args()
         X = np.array([args[f] for f in self._required_features]).reshape(-1, 1)
-        y_pred = lin_mod.predict(X)
+        y_pred = ml_mod.predict(X)
         return {'prediction': y_pred.tolist()[0]}
 
 

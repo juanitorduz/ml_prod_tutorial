@@ -12,14 +12,19 @@ METADATA_PATH = os.path.join(MODEL_DIR, METADATA_FILE)
 
 
 def predict(data_path):
+    """ Generate predictions of the model for new data sored in `data_path`.
+    Print the predictions as an output. 
+    :param data_path: Path of the new data as csv.
+    :return: None
+    """
     # Load data.
     X, y = load_data(data_path)
     # Load model
     print('Loading model from: {}'.format(MODEL_PATH))
-    lin_model = load(MODEL_PATH)
+    ml_model = load(MODEL_PATH)
     # Run inference
     print('Scoring observations...')
-    y_pred = lin_model.predict(X)
+    y_pred = ml_model.predict(X)
     print(y_pred)
     return None
 
