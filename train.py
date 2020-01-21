@@ -38,7 +38,7 @@ def generate_model_metadata(X, y, model):
 def train(data_path):
     """Train simple linear regression with two variables y ~ x.
     Serialize model and metadata.
-    :param data_path: path of the training data as csv.
+    :param data_path: Path of the training data as csv.
     :return: None
     """
     X_train, y_train = load_data(data_path)
