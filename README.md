@@ -44,6 +44,13 @@ docker build -t docker-model .
 docker run docker-model python3 inference.py
 ```
 
+## API
+
+Run docker container:
+```bash
+docker run -it -p 5000:5000 docker-model python3 api.py
+```
+Request predictions (example):
 ```bash
 curl -i -H "Content-Type: application/json" -X POST -d '{"x": 1.2}' 127.0.0.1:5000/predict
 ```
