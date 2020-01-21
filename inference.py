@@ -16,10 +16,10 @@ def predict(data_path):
     X, y = load_data(data_path)
     # Load model
     print('Loading model from: {}'.format(MODEL_PATH))
-    lin_model = load(MODEL_PATH)
+    ml_model = load(MODEL_PATH)
     # Run inference
     print('Scoring observations...')
-    y_pred = lin_model.predict(X)
+    y_pred = ml_model.predict(X)
     print(y_pred)
     return None
 

@@ -22,10 +22,10 @@ def train(data_path):
     """
     X_train, y_train = load_data(data_path)
 
-    lin_model = LinearRegression()
-    lin_model.fit(X_train, y_train)
+    ml_model = LinearRegression()
+    ml_model.fit(X_train, y_train)
 
-    train_mse = mean_squared_error(y_train, lin_model.predict(X_train))
+    train_mse = mean_squared_error(y_train, ml_model.predict(X_train))
 
     metadata = {
         'train_mean_square_error': train_mse,
@@ -33,7 +33,7 @@ def train(data_path):
 
     # Serialize model and metadata.
     print('Serializing model to: {}'.format(MODEL_PATH))
-    dump(lin_model, MODEL_PATH)
+    dump(ml_model, MODEL_PATH)
 
     print('Serializing metadata to: {}'.format(METADATA_PATH))
     with open(METADATA_PATH, 'w') as outfile:

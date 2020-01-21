@@ -10,7 +10,7 @@ METADATA_FILE = os.environ["METADATA_FILE"]
 MODEL_PATH = os.path.join(MODEL_DIR, MODEL_FILE)
 METADATA_PATH = os.path.join(MODEL_DIR, METADATA_FILE)
 
-lin_mod = load(MODEL_PATH)
+ml_mod = load(MODEL_PATH)
 
 app = Flask(__name__)
 api = Api(app)
@@ -33,7 +33,7 @@ class Prediction(Resource):
     def post(self):
         args = self.reqparse.parse_args()
         X = np.array([args[f] for f in self._required_features]).reshape(-1, 1)
-        y_pred = lin_mod.predict(X)
+        y_pred = ml_mod.predict(X)
         return {'prediction': y_pred.tolist()[0]}
 
 
