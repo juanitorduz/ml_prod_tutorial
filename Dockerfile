@@ -10,6 +10,7 @@ ENV MODEL_DIR=model
 ENV MODEL_FILE=lin_mod.joblib
 ENV METADATA_FILE=metadata.json
 
+COPY envs.py ./envs.py
 COPY generate_data.py ./generate_data.py
 COPY utils.py ./utils.py
 COPY train.py ./train.py
