@@ -10,6 +10,11 @@ ENV MODEL_DIR=model
 ENV MODEL_FILE=lin_mod.joblib
 ENV METADATA_FILE=metadata.json
 
+
+ARG AWS_ACCESS_KEY_ID
+ARG AWS_SECRET_ACCESS_KEY
+ARG AWS_REGION=eu-central-1
+
 COPY envs.py ./envs.py
 COPY generate_data.py ./generate_data.py
 COPY utils.py ./utils.py
