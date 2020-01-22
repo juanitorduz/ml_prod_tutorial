@@ -3,3 +3,6 @@ scikit-learn==0.22.1
 pandas==0.25.3
 flask
 flask-restful
+awscli
+s3fs
+
