@@ -19,7 +19,6 @@ COPY envs.py ./envs.py
 COPY generate_data.py ./generate_data.py
 COPY utils.py ./utils.py
 COPY train.py ./train.py
-COPY data/train_data.csv ./data/train_data.csv
 COPY inference.py ./inference.py
 COPY api.py ./api.py
 
