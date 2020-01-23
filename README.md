@@ -1,5 +1,7 @@
 # ML in Production Tutorial 
 
+https://github.com/juanitorduz/ml_prod_tutorial/workflows/Docker Image CI/badge.svg
+
 In this repository I explore tips and tricks to deploy machine learning models with Docker following [http://mlinproduction.com/](http://mlinproduction.com/) posts. 
 
 ## Setup 
