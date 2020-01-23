@@ -26,33 +26,18 @@ make generate_data
 make train
 ```
 
-## Generate Predictions
-
-```bash
-make inference
-```
 ---
 
 ## Build Docker image
 ```bash
-docker build -t docker-model .
-```
-
-```bash
-docker build -t docker-model --build-arg AWS_ACCESS_KEY_ID=$(aws configure get aws_access_key_id) --build-arg AWS_SECRET_ACCESS_KEY=$(aws -- configure get aws_secret_access_key) .
-```
-
-## Generate Predictions
-
-```bash
-docker run docker-model python3 inference.py
+make docker_build
 ```
 
 ## API
 
 Run docker container:
 ```bash
-docker run -it -p 5000:5000 docker-model python3 api.py
+docker run -it -p 5000:5000 docker-model python api.py
 ```
 
 Request predictions (example):
