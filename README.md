@@ -38,6 +38,10 @@ make inference
 docker build -t docker-model .
 ```
 
+```bash
+docker build -t docker-model --build-arg AWS_ACCESS_KEY_ID=$(aws configure get aws_access_key_id) --build-arg AWS_SECRET_ACCESS_KEY=$(aws -- configure get aws_secret_access_key) .
+```
+
 ## Generate Predictions
 
 ```bash
@@ -50,6 +54,7 @@ Run docker container:
 ```bash
 docker run -it -p 5000:5000 docker-model python3 api.py
 ```
+
 Request predictions (example):
 ```bash
 curl -i -H "Content-Type: application/json" -X POST -d '{"x": 1.2}' 127.0.0.1:5000/predict

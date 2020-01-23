@@ -9,8 +9,12 @@ from utils import load_data
 MODEL_DIR = envs['MODEL_DIR']
 MODEL_FILE = envs['MODEL_FILE']
 METADATA_FILE = envs['METADATA_FILE']
+S3_BUCKET = envs['S3BUCKET']
 MODEL_PATH = os.path.join(MODEL_DIR, MODEL_FILE)
 METADATA_PATH = os.path.join(MODEL_DIR, METADATA_FILE)
+S3_DATA_PATH = os.path.join(
+    's3://', S3_BUCKET, 'ml_prod_tutorial/data/train_data.csv'
+)
 
 
 def generate_model_metadata(X, y, model):
@@ -60,4 +64,4 @@ def train(data_path):
 
 
 if __name__ == '__main__':
-    train(data_path='data/train_data.csv')
+    train(data_path=S3_DATA_PATH)
