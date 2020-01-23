@@ -1,5 +1,8 @@
 FROM python:3.7
 
+LABEL maintainer="juanitorduz"
+LABEL maintainer_email="juanitorduz@gmail.com"
+
 # Install dependencies:
 COPY requirements.txt ./requirements.txt
 RUN pip install -r requirements.txt
@@ -7,7 +10,7 @@ RUN rm ./requirements.txt
 
 RUN mkdir model
 ENV MODEL_DIR=model
-ENV MODEL_FILE=lin_mod.joblib
+ENV MODEL_FILE=ml_mod.joblib
 ENV METADATA_FILE=metadata.json
 
 
