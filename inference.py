@@ -34,4 +34,4 @@ def predict(data_path):
 
 
 if __name__ == '__main__':
-    predict(S3_DATA_PATH)
+    predict('/data/train_data.csv')
