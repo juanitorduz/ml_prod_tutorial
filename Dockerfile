@@ -9,10 +9,6 @@ RUN pip install -r requirements.txt
 RUN rm ./requirements.txt
 
 RUN mkdir model
-ENV MODEL_DIR=model
-ENV MODEL_FILE=ml_mod.joblib
-ENV METADATA_FILE=metadata.json
-
 
 ARG AWS_ACCESS_KEY_ID
 ARG AWS_SECRET_ACCESS_KEY
@@ -26,4 +22,3 @@ COPY inference.py ./inference.py
 COPY api.py ./api.py
 
 RUN python3 train.py
-
