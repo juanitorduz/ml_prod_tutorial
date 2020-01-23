@@ -13,7 +13,7 @@ ENV METADATA_FILE=metadata.json
 
 ARG AWS_ACCESS_KEY_ID
 ARG AWS_SECRET_ACCESS_KEY
-ARG AWS_REGION=eu-central-1
+ARG AWS_REGION
 
 COPY envs.py ./envs.py
 COPY generate_data.py ./generate_data.py
