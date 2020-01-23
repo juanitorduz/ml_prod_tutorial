@@ -6,3 +6,4 @@
 - https://github.com/tanujjain/deploy-ml-model
 - https://cameroneckelberry.co/words/getting-aws-credentials-into-a-docker-container-without-hardcoding-it
 - https://towardsdatascience.com/detect-greek-language-in-text-using-docker-store-in-s3-without-boto3-3c6d6b220639
+- https://medium.com/better-programming/github-actions-for-docker-eaf22bbcc879
