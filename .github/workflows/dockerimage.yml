@@ -11,4 +11,4 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Build the Docker image
-      run: docker build -t docker-model --build-arg AWS_ACCESS_KEY_ID=$(aws configure get aws_access_key_id) --build-arg AWS_SECRET_ACCESS_KEY=$(aws -- configure get aws_secret_access_key) . --file Dockerfile --tag my-image-name:$(date +%s)
+      run: docker build -t docker-model --build-arg AWS_ACCESS_KEY_ID=${{secrets.AWS_ACCESS_KEY_ID}} --build-arg AWS_SECRET_ACCESS_KEY=${{secrets.SECRET_ACCESS_KEY}} . --file Dockerfile --tag my-image-name:$(date +%s)
