@@ -1,0 +1,25 @@
+name: Python Test
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup Python Version
+      uses: actions/setup-python@v1
+      with:
+        python-version: 3.7
+    - name: Env Set Up
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        mkdir -p data
+        mkdir -p model
+    - name: Run Tests
+      run: |
+        pip install pytest
+        pytest

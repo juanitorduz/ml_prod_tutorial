@@ -6,6 +6,7 @@ install:
 	pip install -r requirements.txt
 
 generate_data:
+	mkdir -p data
 	python generate_data.py
 
 train:

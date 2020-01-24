@@ -5,4 +5,4 @@ flask
 flask-restful
 awscli
 s3fs
-
+pytest==5.3.4
