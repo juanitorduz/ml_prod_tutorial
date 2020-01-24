@@ -33,6 +33,6 @@ Blog posts from [https://mlinproduction.com/](https://mlinproduction.com/), spec
 - [Detect Greek language in text using Docker, & store in S3 without Boto3](https://towardsdatascience.com/detect-greek-language-in-text-using-docker-store-in-s3-without-boto3-3c6d6b220639)
 - [Stackoverflow: AWS credentials in Dockerfile](https://stackoverflow.com/questions/51824671/aws-credentials-in-dockerfile/51825625#51825625)
 
-## GitHub Actions
+### GitHub Actions
 
 - [CI/CD for Docker Using GitHub Actions](https://medium.com/better-programming/github-actions-for-docker-eaf22bbcc879)
