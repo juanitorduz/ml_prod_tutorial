@@ -1,4 +1,4 @@
-name: Python Testz
+name: Python Test
 
 on: [push]
 
@@ -7,7 +7,12 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    python-version: 3.7
+    strategy:
+      # You can use PyPy versions in python-version. For example, pypy2 and pypy3
+      matrix:
+        python-version: [3.7]
+
+
 
     steps:
     - uses: actions/checkout@v2
