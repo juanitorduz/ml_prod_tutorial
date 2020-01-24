@@ -1,5 +1,7 @@
 # ML in Production Tutorial
 
+![Build](https://github.com/juanitorduz/ml_prod_tutorial/workflows/Docker%20Image%20CI/badge.svg)
+
 The idea to write up this repository is motivated by the very interesting set of blog posts from [http://mlinproduction.com/](http://mlinproduction.com/) by [Luigi](mailto:luigi@mlinproduction.com). In particular, the ones about dockerizing a machine learning models:
 
   - [Docker for Machine Learning – Part I](https://mlinproduction.com/docker-for-ml-part-1/)
@@ -15,12 +17,16 @@ In addition to the main functionalities, I also wanted to complement it with ext
 
   - Describe how to build a Docker image passing the credentials as `ARG` variables and not as `ENV` variables. This is particular special for security reasons.
 
-  - Set up a [Docker container GitHub Action](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/creating-a-docker-container-action) which gets trigger on `push`, which ensures reliability of your version control. 
+  - Set up a [Docker container GitHub Action](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/creating-a-docker-container-action) which gets trigger on `push`, which ensures reliability of your version control.
 
-![Build](https://github.com/juanitorduz/ml_prod_tutorial/workflows/Docker%20Image%20CI/badge.svg)
+  - Unit Testing (#TODO).
 
-In this repository I explore tips and tricks to deploy machine learning models with Docker following [http://mlinproduction.com/](http://mlinproduction.com/) posts.
+I have also added a [Resources](https://github.com/juanitorduz/ml_prod_tutorial/blob/master/resources.md) section where I store useful references, interesting reading and similar approaches.
 
+---
+# Contributing
+
+I will keep adding functionalities to this *toy model* repository. If you have some suggestions, comments or find bugs please create a Pull Request or [drop me a line](mailto:juanitorduz@gmail.com).
 ## Setup
 
 1. Create virtual environment:
