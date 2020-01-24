@@ -38,7 +38,7 @@ We are going to use a [Makefile](https://www.gnu.org/software/make/manual/html_n
 1. Create virtual environment:
 
 ```bash
-make env
+make venv
 ```
 
 2. Activate environment and install python packages:
