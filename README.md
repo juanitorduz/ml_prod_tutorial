@@ -16,14 +16,14 @@ In addition to the main functionalities, I also wanted to complement it with ext
   - Train the machine learning model with data stored in an [AWS S3 bucket](https://aws.amazon.com/s3/). In particular, when building the Docker image, do not copy the training data into it.
 
   - Describe how to build a Docker image passing the credentials as `ARG` variables and not as `ENV` variables. This is particular special for security reasons.
+  
+  - Unit Testing (needs more tests).
 
   - Set up [GitHub Actions](https://github.com/features/actions):
     - [Docker container GitHub Action](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/creating-a-docker-container-action)
     - [Python (pytest) Action](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/using-python-with-github-actions)
 
     which get trigger on `push`, which ensures reliability on the code.
-
-  - Unit Testing (needs more tests).
 
   - Deploy to EC2 (#TODO) via cloud formation/terraform.
 
