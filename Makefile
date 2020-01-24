@@ -1,5 +1,5 @@
 venv:
-	virtualenv venv
+	virtualenv venv --python=python3.7
 
 install:
 	source venv/bin/activate;
