@@ -13,7 +13,7 @@ The idea to write up this repository is motivated by the very interesting set of
 
 In addition to the main functionalities, I also wanted to complement it with extra features which are not discussed there:
 
-  - Train the machine learning model with data stored in an AWS S3 bucket. In particular, when building the Docker image, do not copy the training data into it.
+  - Train the machine learning model with data stored in an [AWS S3 bucket](https://aws.amazon.com/s3/). In particular, when building the Docker image, do not copy the training data into it.
 
   - Describe how to build a Docker image passing the credentials as `ARG` variables and not as `ENV` variables. This is particular special for security reasons.
 
