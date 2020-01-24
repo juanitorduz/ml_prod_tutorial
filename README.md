@@ -22,6 +22,7 @@ In addition to the main functionalities, I also wanted to complement it with ext
   - Set up [GitHub Actions](https://github.com/features/actions):
     - [Docker container GitHub Action](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/creating-a-docker-container-action)
     - [Python (pytest) Action](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/using-python-with-github-actions)
+    - [Codecov GitHub Action](https://github.com/codecov/codecov-action) to get reports on tests coverage. 
 
     which get trigger on `push`, which ensures reliability on the code.
 
