@@ -36,18 +36,20 @@ I will keep adding functionalities to this *toy model* repository. If you have s
 We are going to use a [Makefile](https://www.gnu.org/software/make/manual/html_node/Introduction.html) for the main functionalities.
 
 1. Create virtual environment:
+
 ```bash
 make env
 ```
 
 2. Activate environment and install python packages:
+
 ```bash
 make install
 ```
 
 ## Generate Data
 
-This toy-model example fits a linear regression model of the form y ~ x. To generate  sample data for this model you can run the command (writes it to data/train_data.csv`):
+This toy-model example fits a linear regression model of the form y ~ x. To generate  sample data for this model you can run the command (writes it to `data/train_data.csv`
 
 ```bash
 make generate_data
@@ -57,13 +59,13 @@ To train the model store the training data in a **secure** S3 bucket.
 
 ## Train Model
 
-To train and save the model (to `model/ml_mod.joblib`, see `envs.py`) run.
+To train and save the model (to `model/ml_mod.joblib`, see `envs.py`) run:
 
 ```bash
 make train
 ```
 
-The training phase assumes the data is stored in an S3 bucket with relative path: `s3://<S3BUCKET>/ml_prod_tutorial/data/train_data.csv`.
+The training phase assumes the data is stored in an S3 bucket with relative path: `s3://S3BUCKET/ml_prod_tutorial/data/train_data.csv`.
 ---
 
 ## AWS Credentials
