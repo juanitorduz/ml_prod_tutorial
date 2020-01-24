@@ -17,9 +17,13 @@ In addition to the main functionalities, I also wanted to complement it with ext
 
   - Describe how to build a Docker image passing the credentials as `ARG` variables and not as `ENV` variables. This is particular special for security reasons.
 
-  - Set up a [Docker container GitHub Action](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/creating-a-docker-container-action) which gets trigger on `push`, which ensures reliability of your version control.
+  - Set up [GitHub Actions](https://github.com/features/actions):
+    - [Docker container GitHub Action](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/creating-a-docker-container-action)
+    - [Python (pytest) Action](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/using-python-with-github-actions)
 
-  - Unit Testing (#TODO).
+    which get trigger on `push`, which ensures reliability on the code.
+
+  - Unit Testing (needs more tests).
 
   - Deploy to EC2 (#TODO) via cloud formation/terraform.
 
