@@ -32,7 +32,7 @@ I have also added a [Resources](https://github.com/juanitorduz/ml_prod_tutorial/
 ---
 ## Contributing
 
-I will keep adding functionalities to this *toy model* repository. If you have some suggestions, comments or find bugs please create a Pull Request or [drop me a line](mailto:juanitorduz@gmail.com).
+I will keep adding functionalities to this *toy model* repository. If you have some other relevant resources, suggestions, comments or find bugs please create a Pull Request or [drop me a line](mailto:juanitorduz@gmail.com).
 
 ---
 ## Setup
