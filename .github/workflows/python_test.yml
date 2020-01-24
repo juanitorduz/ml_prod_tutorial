@@ -9,15 +9,16 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Setup Python
+    - name: Setup Python Version
       uses: actions/setup-python@v1
       with:
         python-version: 3.7
-    - name: set up
+    - name: Env Set Up
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-    - name: run tests
+        mkdir -p data
+    - name: Run Tests
       run: |
         pip install pytest
         pytest
