@@ -66,6 +66,7 @@ make train
 ```
 
 The training phase assumes the data is stored in an S3 bucket with relative path: `s3://S3BUCKET/ml_prod_tutorial/data/train_data.csv`.
+
 ---
 
 ## AWS Credentials
@@ -75,7 +76,6 @@ It is recommended to create an [IAM User](https://aws.amazon.com/iam/) with the 
 **Warning:** never store your credentials in any script on a GitHub repository!
 
 ---
-
 ## Build Docker image
 
 To build the docker image simply run:
@@ -104,8 +104,8 @@ To generate prediction for a given sample data point (here, x = 1.2 )you can run
 ```bash
 curl -i -H "Content-Type: application/json" -X POST -d '{"x": 1.2}' 127.0.0.1:5000/predict
 ```
----
 
+---
 ## Docker container GitHub Action
 
 In this step we set up a Docker container GitHub Action where we test the Docker image build on each push. Note that this requires training the model (this could or could not be ideal, depends on the application), which in particular requires access to the data. As stressed above, we do not want to store the AWS credentials on the repository. One option it to store them as [GitHub Secrets](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/creating-and-using-encrypted-secrets). When could then access them using, for example, `${{secrets.AWS_ACCESS_KEY_ID}}`.
