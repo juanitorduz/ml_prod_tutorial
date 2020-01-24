@@ -1,4 +1,4 @@
-name: Python Test
+name: Pytest CI
 
 on: [push]
 
