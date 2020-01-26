@@ -26,11 +26,11 @@ In addition to the main functionalities, I also wanted to complement it with ext
 
     which get trigger on `push`, which ensures reliability on the code.
 
-  - Deploy to EC2 (#TODO) via cloud formation/terraform.
-
 I have also added a [Resources](https://github.com/juanitorduz/ml_prod_tutorial/blob/master/resources.md) section where I store useful references, interesting reading and similar approaches.
 
 **Remark:** This repository structure should be seen as a *toy-use-case*. You might want to package the files correctly, using for example [Cookiecutter Data Science](https://drivendata.github.io/cookiecutter-data-science/).
+
+**Deployment**: This is out of the scope of this repository. There are many ways of doing this! See, for example, [Deploying Elastic Beanstalk applications from Docker containers](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_docker.html).
 
 ---
 ## Contributing
