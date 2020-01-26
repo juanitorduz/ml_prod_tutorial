@@ -30,6 +30,8 @@ In addition to the main functionalities, I also wanted to complement it with ext
 
 I have also added a [Resources](https://github.com/juanitorduz/ml_prod_tutorial/blob/master/resources.md) section where I store useful references, interesting reading and similar approaches.
 
+**Remark:** This repository structure should be seen as a *toy-use-case*. You might want to package the files correctly, using for example [Cookiecutter Data Science](https://drivendata.github.io/cookiecutter-data-science/)
+
 ---
 ## Contributing
 
