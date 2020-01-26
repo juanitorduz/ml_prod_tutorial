@@ -97,6 +97,8 @@ This image trains and saves the model in order to generate predictions. You can 
 docker run docker-model inference.py
 ```
 
+You can share this model image on [Docker Hub](https://hub.docker.com/) or as a `.tar` file.
+
 ## Flask App
 
 The module `apy.py` defines a [Flask](https://flask.palletsprojects.com/en/1.1.x/) application which enable us to generate prediction in real time. To spin up the app just run (we choose `port = 5000`):
