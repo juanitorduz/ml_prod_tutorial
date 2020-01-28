@@ -7,7 +7,7 @@ The idea to write up this repository is motivated by the very interesting set of
   - [Docker for Machine Learning – Part I](https://mlinproduction.com/docker-for-ml-part-1/)
   - [Docker for Machine Learning – Part II](https://mlinproduction.com/docker-for-ml-part-2/)
   - [Docker for Machine Learning – Part III](https://mlinproduction.com/docker-for-ml-part-3/)
-  - [Using Docker to Generate Machine Learning Predictions in Real Time](https://mlinproduction.com/docker-for-ml-part-4/).
+  - [Using Docker to Generate Machine Learning Predictions in Real Time](https://mlinproduction.com/docker-for-ml-part-4/)
 
 **Disclaimer:** The core of this repository is based on this reference and I encourage everyone to read them before going into the code if you do not have much experience on this topic.
 
@@ -28,7 +28,7 @@ In addition to the main functionalities, I also wanted to complement it with ext
 
 I have also added a [Resources](https://github.com/juanitorduz/ml_prod_tutorial/blob/master/resources.md) section where I store useful references, interesting reading and similar approaches.
 
-**Remark:** This repository structure should be seen as a *toy-use-case*. You might want to package the files correctly, using for example [Cookiecutter Data Science](https://drivendata.github.io/cookiecutter-data-science/).
+**Remark:** This repository structure should be seen as a minimal *toy-use-case*. You might want to package the files correctly, using for example [Cookiecutter Data Science](https://drivendata.github.io/cookiecutter-data-science/).
 
 **Deployment**: This is out of the scope of this repository. There are many ways of doing this! See, for example, [Deploying Elastic Beanstalk applications from Docker containers](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_docker.html).
 
