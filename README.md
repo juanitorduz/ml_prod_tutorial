@@ -24,7 +24,7 @@ In addition to the main functionalities, I also wanted to complement it with ext
     - [Python (pytest) Action](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/using-python-with-github-actions)
     - [Codecov GitHub Action](https://github.com/codecov/codecov-action) to get reports on tests coverage. 
 
-    which get trigger on `push`, which ensures reliability on the code.
+    which get trigger on `push` and ensures reliability on the code.
 
 I have also added a [Resources](https://github.com/juanitorduz/ml_prod_tutorial/blob/master/resources.md) section where I store useful references, interesting reading and similar approaches.
 
