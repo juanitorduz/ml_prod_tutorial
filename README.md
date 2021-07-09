@@ -1,6 +1,7 @@
 # ML in Production Tutorial
 
 ![Build](https://github.com/juanitorduz/ml_prod_tutorial/workflows/Docker%20Image%20CI/badge.svg) ![Build](https://github.com/juanitorduz/ml_prod_tutorial/workflows/Pytest%20CI/badge.svg) [![codecov](https://codecov.io/gh/juanitorduz/ml_prod_tutorial/branch/master/graph/badge.svg)](https://codecov.io/gh/juanitorduz/ml_prod_tutorial)
+[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/juanitorduz/ml_prod_tutorial)
 
 The idea to write up this repository is motivated by the very interesting set of blog posts from [http://mlinproduction.com/](http://mlinproduction.com/) by [Luigi Patruno](mailto:luigi@mlinproduction.com). In particular, the ones about dockerizing a machine learning models:
 
